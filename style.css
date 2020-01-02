@@ -1,0 +1,40 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+  }
+  
+  h1 {
+    font-style: italic;
+    color: #373fff;
+  }
+  
+  .btns > div {
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+  }
+  
+  .btndesc > div {
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  #console {
+    margin: 2px;
+    padding-top: 5px;
+    height: fit-content;
+  }
+  
+  .btnrow {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }

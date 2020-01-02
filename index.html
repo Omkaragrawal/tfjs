@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Load the latest version of TensorFlow.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+</head>
+
+<body>
+  <div id="preload" class="container center-align">
+    <h1>Please wait MobileNet is loading ....</h1>
+  </div>
+
+  <div id="postload" class="container center-align">
+
+    <!-- Add an image that we will use to test -->
+      <video class="responsive-video" autoplay playsinline muted id="webcam"></video>
+
+     <div id="console" class="center-align red-text text-accent-4"></div>
+
+    <div class="row btnrow">
+      <div class="col s12 row btns">
+        <div class="col s4">
+          <a class="btn waves-effect cyan accent-4" id="class-a">Add A</a>
+        </div>
+        <div class="col s4">
+          <a class="btn waves-effect cyan accent-4" id="class-b">Add B</a>
+        </div>
+        <div class="col s4">
+          <a class="btn waves-effect cyan accent-4" id="class-c">Add C</a>
+        </div>
+      </div>
+      <div class="col s12 row btndesc">
+        <div class="col s4">
+          Add Images that belong to Class A
+        </div>
+        <div class="col s4">
+          Add Images that belong to Class B<br><br>
+        </div>
+        <div class="col s4">
+          A
+          dd Images that belong to Class C<br> <br>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Load index.js after the content of the page -->
+  <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+  <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+  <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  <script src="./index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+</body>
+
+</html>
